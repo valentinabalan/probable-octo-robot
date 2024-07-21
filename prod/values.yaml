@@ -17,11 +17,11 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     acme.cert-manager.io/http01-edit-in-place: "true"
   hosts:
-    - host: prod-artemis.amazon1app.com
+    - host: amazon1app.com
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls: 
     - secretName: prod-artemis-tls
       hosts:
-        - prod-artemis.amazon1app.com
+        - amazon1app.com
